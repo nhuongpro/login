@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoginBackgroudVideo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="if8-jx-xVR">
+                                <rect key="frame" x="30" y="100" width="315" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jq9-s5-BRc"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cGh-aX-KZ7">
+                                <rect key="frame" x="30" y="150" width="315" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="W2E-Ik-4Xh"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2A-qa-bFV" customClass="custumButton" customModule="LoginBackgroudVideo" customModuleProvider="target">
+                                <rect key="frame" x="69.5" y="205" width="236" height="30"/>
+                                <color key="backgroundColor" red="0.10076283630000001" green="0.2442005783" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.90287736339277025" green="1" blue="0.85958151716590747" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pdI-sr-400"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOk-eG-cVR" customClass="custumButton" customModule="LoginBackgroudVideo" customModuleProvider="target">
+                                <rect key="frame" x="69.5" y="250" width="236" height="30"/>
+                                <color key="backgroundColor" red="0.63875611108968122" green="0.58431161273472854" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="btnRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iid-i9-g2R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHN-gK-2vZ" customClass="custumButton" customModule="LoginBackgroudVideo" customModuleProvider="target">
+                                <rect key="frame" x="69.5" y="295" width="236" height="30"/>
+                                <color key="backgroundColor" red="0.36725556559055594" green="0.9926491423041478" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Change"/>
+                                <connections>
+                                    <action selector="btnChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dXX-HD-R5e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0H-q5-Mux" customClass="custumButton" customModule="LoginBackgroudVideo" customModuleProvider="target">
+                                <rect key="frame" x="69.5" y="340" width="236" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.50053735817461731" blue="0.18821868086009097" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="btnDelete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A93-2W-w0H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="J2A-qa-bFV" firstAttribute="height" secondItem="cGh-aX-KZ7" secondAttribute="height" id="0F0-Sd-HgC"/>
+                            <constraint firstItem="IOk-eG-cVR" firstAttribute="height" secondItem="J2A-qa-bFV" secondAttribute="height" id="3lE-fl-Wc8"/>
+                            <constraint firstItem="J2A-qa-bFV" firstAttribute="top" secondItem="cGh-aX-KZ7" secondAttribute="bottom" constant="25" id="48K-Ca-zcx"/>
+                            <constraint firstAttribute="trailing" secondItem="if8-jx-xVR" secondAttribute="trailing" constant="30" id="4KS-8s-4Bs"/>
+                            <constraint firstItem="if8-jx-xVR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="8jz-7x-sw4"/>
+                            <constraint firstItem="cGh-aX-KZ7" firstAttribute="centerX" secondItem="if8-jx-xVR" secondAttribute="centerX" id="Dqy-EN-dL3"/>
+                            <constraint firstItem="if8-jx-xVR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="FIr-iY-DVq"/>
+                            <constraint firstItem="B0H-q5-Mux" firstAttribute="top" secondItem="cHN-gK-2vZ" secondAttribute="bottom" constant="15" id="HM4-Gj-2mB"/>
+                            <constraint firstItem="B0H-q5-Mux" firstAttribute="centerX" secondItem="cHN-gK-2vZ" secondAttribute="centerX" id="Hqf-t0-s8J"/>
+                            <constraint firstItem="IOk-eG-cVR" firstAttribute="width" secondItem="J2A-qa-bFV" secondAttribute="width" id="OH6-dh-EEe"/>
+                            <constraint firstItem="cGh-aX-KZ7" firstAttribute="width" secondItem="if8-jx-xVR" secondAttribute="width" id="PQa-Ez-f0p"/>
+                            <constraint firstItem="J2A-qa-bFV" firstAttribute="centerX" secondItem="cGh-aX-KZ7" secondAttribute="centerX" id="SZ1-3r-bwC"/>
+                            <constraint firstItem="B0H-q5-Mux" firstAttribute="height" secondItem="cHN-gK-2vZ" secondAttribute="height" id="SfL-eY-huR"/>
+                            <constraint firstItem="cHN-gK-2vZ" firstAttribute="width" secondItem="IOk-eG-cVR" secondAttribute="width" id="TSc-Ra-aKP"/>
+                            <constraint firstItem="cHN-gK-2vZ" firstAttribute="top" secondItem="IOk-eG-cVR" secondAttribute="bottom" constant="15" id="Ux9-64-MAF"/>
+                            <constraint firstItem="IOk-eG-cVR" firstAttribute="top" secondItem="J2A-qa-bFV" secondAttribute="bottom" constant="15" id="YjW-mT-jWM"/>
+                            <constraint firstItem="cHN-gK-2vZ" firstAttribute="centerX" secondItem="IOk-eG-cVR" secondAttribute="centerX" id="cst-9A-EIo"/>
+                            <constraint firstItem="J2A-qa-bFV" firstAttribute="width" secondItem="cGh-aX-KZ7" secondAttribute="width" multiplier="3/4" id="f2W-l7-vh7"/>
+                            <constraint firstItem="cHN-gK-2vZ" firstAttribute="height" secondItem="IOk-eG-cVR" secondAttribute="height" id="fCN-Be-Quk"/>
+                            <constraint firstItem="cGh-aX-KZ7" firstAttribute="top" secondItem="if8-jx-xVR" secondAttribute="bottom" constant="20" id="pUM-bY-pq1"/>
+                            <constraint firstItem="B0H-q5-Mux" firstAttribute="width" secondItem="cHN-gK-2vZ" secondAttribute="width" id="qVJ-eG-zkC"/>
+                            <constraint firstItem="IOk-eG-cVR" firstAttribute="centerX" secondItem="J2A-qa-bFV" secondAttribute="centerX" id="wnU-6p-i5R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblPass" destination="cGh-aX-KZ7" id="NyH-5S-q6m"/>
+                        <outlet property="lblUser" destination="if8-jx-xVR" id="RKn-1x-fR4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="106.59670164917542"/>
+        </scene>
+    </scenes>
+</document>
